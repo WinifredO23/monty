@@ -53,6 +53,7 @@ typedef struct instruction_s
 } instruction_t;
 
 void push(stack_t **head, bus_t bus, int counter);
+void pall(stack_t *head, bus_t bus, int counter);
 void free_stack(stack_t *head);
 void addnode(stack_t **head, int n);
 
