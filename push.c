@@ -57,7 +57,7 @@ int is_integer(char *str)
  */
 void handle_error(const char *message, stack_t **head, unsigned int counter)
 {
-	fprintf(stderr, message, counter);
+	fprintf(stderr, "L%d: %s\n", counter, message);
 	fclose(bus.file);
 	free(bus.content);
 	free_stack(*head);
