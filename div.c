@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * divide - Divides two numbers and handles division by zero.
+ * divide - Divides two numbers
  * @a: The dividend.
  * @b: The divisor.
  * @counter: Line number for error reporting.
@@ -14,7 +14,7 @@ int divide(int a, int b, unsigned int counter, stack_t **head)
 		handle_error("division by zero", head, counter);
 	}
 
-	return a / b;
+	return (a / b);
 }
 /**
  * f_div - Divides the top two elements of the stack.

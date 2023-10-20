@@ -15,9 +15,7 @@ void f_rotl(stack_t **head, __attribute__((unused)) unsigned int counter)
 	}
 
 	for (new_head = current; new_head->next; new_head = new_head->next)
-	{
-		
-	}
+		;
 
 	new_head->next = *head;
 	(*head)->prev = new_head;

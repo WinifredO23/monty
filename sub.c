@@ -1,5 +1,4 @@
 #include "monty.h"
-
 /**
  * f_sub - Subtracts the top element from the second top element of the stack.
  * @head: Pointer to the stack.
@@ -18,7 +17,6 @@ void f_sub(stack_t **head, unsigned int counter)
 
 	top = *head;
 	second_top = top->next;
-	
 	result = second_top->n - top->n;
 	second_top->n = result;
 	*head = second_top;
